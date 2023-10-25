@@ -27,7 +27,7 @@ const Home = () => {
               cursor={true}
             />
           </p>
-          <p className='text-white md:text-3xl text-xl  mt-5'>I am the digital architect, weaving pixelated dreams into vibrant realities. As a front-end developer, I am the conductor of the symphony that is user experience. With code as my instrument, I sculpt seamless interfaces, ensuring every click and scroll is a harmonious melody of design and functionality.</p>
+          <p className='text-white md:text-3xl text-xl  mt-5 leading-20'>I am the digital architect, weaving pixelated dreams into vibrant realities. As a front-end developer, I am the conductor of the symphony that is user experience. With code as my instrument, I sculpt seamless interfaces, ensuring every click and scroll is a harmonious melody of design and functionality.</p>
         </div>
         {/* Right side with pulsating effect */}
         <div className="flex md:flex-row flex-col pulsating-blob md:w-2/4">

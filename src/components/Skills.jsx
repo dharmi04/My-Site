@@ -8,8 +8,8 @@ const Skills = () => {
       {/* left */}
       <div className="w-full md:w-2/4 p-4 md:p-10">
         <div className="flex flex-col justify-between">
-          <h1 className="text-white font-bold text-4xl md:text-5xl tracking-wide">About</h1>
-          <p className='text-white text-2xl md:text-3xl mt-5 leading-6'>
+          <h1 className="text-pink-500 font-bold md:text-5xl text-3xl  tracking-wide">About</h1>
+          <p className='text-white text-2xl md:text-3xl mt-5 leading-20'>
             Expert in frontend technologies like{' '}
             <span className='text-pink-500'>HTML</span>,{' '}
             <span className='text-pink-500'>CSS</span>,{' '}

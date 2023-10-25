@@ -17,7 +17,7 @@ const MyWorks = () => {
   return (
     <div>
       <div>
-        <h1 className='text-white font-bold text-5xl text-center justify-center mt-10 md:mt-0'>My Works</h1>
+        <h1 className='text-pink-500 font-bold md:text-5xl text-3xl text-center justify-center mt-10 md:mt-0'>My Works</h1>
       </div>
       <div className="my-works-container mt-5 md:flex md:flex-row md:justify-center">
         <div
