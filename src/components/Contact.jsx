@@ -7,8 +7,8 @@ const Contact = () => {
     email: '',
     subject: '',
     context: '',
-    to_email: 'recipient@example.com', // Set the recipient's email address
-    from_email: 'sender@example.com', // Set the sender's email address
+    to_email: 'recipient@example.com', 
+    from_email: 'sender@example.com', 
   });
 
   const form = useRef();

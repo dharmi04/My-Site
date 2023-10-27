@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './MyWorks.css'; // Add your component's CSS
+import './MyWorks.css'; 
 import encode from '../assets/encode.png';
 
 const MyWorks = () => {
