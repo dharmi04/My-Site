@@ -4,7 +4,7 @@ import './GlassCube.css'; // We will create this CSS file
 
 const GlassCube = () => {
   return (
-    <div className="glass-cube">
+    <div className="glass-cube text-white">
         
       <div className="side front">HTML</div>
       <div className="side back">CSS</div>

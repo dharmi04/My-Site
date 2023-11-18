@@ -11,17 +11,17 @@
   perspective: 1000px;
   position: relative;
   cursor: pointer;
-  border: 1px solid #D5438D; /* Pink border color */
+  border: 1px solid #ffff; /* Pink border color */
   transition: border-color 0.3s ease;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
-              0 0 20px rgba(213, 67, 141, 0.7); /* Pink shadow effect */
+              0 0 20px #ffff(213, 67, 141, 0.7); /* Pink shadow effect */
 }
 
 .glass-card:hover {
   border-color: #333; /* Change border color on hover to a darker color if desired */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
-              0 0 20px rgba(213, 67, 141, 0.9); /* Darker pink shadow effect on hover */
+              0 0 20px #ffff(213, 67, 141, 0.9); /* Darker pink shadow effect on hover */
 }
 
 .glass-card .card-front,

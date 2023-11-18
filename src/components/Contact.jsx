@@ -36,9 +36,9 @@ const Contact = () => {
   };
 
   return (
-    <div>
-      <div className='md:w-2/3 w-full  mt-10 p-4'>
-        <h1 className='text-pink-500 font-bold md:text-5xl text-3xl'>Contact Me</h1>
+    <div className=''>
+      <div className='md:w-2/3 w-full p-4'>
+        <h1 className='text-white font-bold md:text-5xl text-3xl'>Contact Me</h1>
         <p className='text-white font-normal md:text-2xl text-xl justify-center mt-4'>
           I am interested in freelance opportunities – especially ambitious projects.
         </p>
