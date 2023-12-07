@@ -10,7 +10,7 @@ const Home1 = () => {
         <p className='text-white'>
           <Link to="/about" className="mx-2">About</Link> ||
           <Link to="/skills" className="mx-2">Skills</Link> ||
-          <Link to="/myworks" className="mx-2">My Works</Link> ||
+          {/* <Link to="/myworks" className="mx-2">My Works</Link> || */}
           <Link to="/contact" className="mx-2">Contact</Link>
         </p>
       </div>

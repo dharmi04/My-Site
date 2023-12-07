@@ -1,10 +1,18 @@
 import React from 'react';
 import GlassCube from './GlassCube';
 import './Skills.css'
+import Nav from './Nav';
 
 const Skills = () => {
+  const gradientBackground = {
+    background: 'rgb(195,147,34)',
+    backgroundImage: 'linear-gradient(0deg, rgba(195,147,34,1) 0%, rgba(0,0,0,1) 76%)',
+  };
   return (
-    <div className="flex flex-col md:flex-row h-screen  relative skills-container">
+    <div  style={gradientBackground}>
+      <Nav />
+<div className="flex flex-col md:flex-row h-screen  relative skills-container">
+      
       {/* left */}
       <div className="w-full md:w-2/4 p-4 md:p-10">
         <div className="flex flex-col justify-between">
@@ -27,6 +35,8 @@ const Skills = () => {
         <GlassCube className="right-2" />
       </div>
     </div>
+    </div>
+    
   );
 };
 

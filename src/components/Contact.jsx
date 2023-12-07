@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Nav from './Nav';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -34,15 +35,21 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+  const gradientBackground = {
+    background: 'rgb(195,147,34)',
+    backgroundImage: 'linear-gradient(0deg, rgba(195,147,34,1) 0%, rgba(0,0,0,1) 76%)',
+  };
 
   return (
-    <div className=''>
+
+    <div style={gradientBackground} >
+      <Nav />
       <div className='md:w-2/3 w-full p-4'>
-        <h1 className='text-white font-bold md:text-5xl text-3xl'>Contact Me</h1>
-        <p className='text-white font-normal md:text-2xl text-xl justify-center mt-4'>
+        <h1 className='text-white font-bold md:text-4xl text-3xl'>Contact Me</h1>
+        <p className='text-white font-normal md:text-xl text-xl justify-center mt-4'>
           I am interested in freelance opportunities – especially ambitious projects.
         </p>
-        <p className='text-white font-normal md:text-2xl text-xl justify-center'>
+        <p className='text-white font-normal md:text-xl text-xl justify-center'>
           However, if you have other requests or questions, don’t hesitate to contact me using the form below.
         </p>
         <form ref={form} onSubmit={sendEmail}>
@@ -54,7 +61,7 @@ const Contact = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="shadow appearance-none border border-pink-500 rounded py-2 px-3 text-white leading-tight focus:shadow-sm focus:outline-none focus:shadow-pink-500 bg-transparent md:w-44 w-32 text-lg"
+                className="shadow appearance-none border border-white rounded py-2 px-3 text-white leading-tight focus:shadow-sm focus:outline-none focus:shadow-white bg-transparent md:w-44 w-32 text-lg"
                 type="text"
                 placeholder="Your Name"
                 required
@@ -65,7 +72,7 @@ const Contact = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="shadow appearance-none border border-pink-500 rounded py-2 px-3 text-white leading-tight focus:shadow-sm focus:outline-none focus:shadow-pink-500 bg-transparent md:w-44 w-32 text-lg"
+                className="shadow appearance-none border border-white rounded py-2 px-3 text-white leading-tight focus:shadow-sm focus:outline-none focus:shadow-white bg-transparent md:w-44 w-32 text-lg"
                 type="email"
                 placeholder="Your Email"
                 required
@@ -77,7 +84,7 @@ const Contact = () => {
               name="subject"
               value={formData.subject}
               onChange={handleChange}
-              className="shadow appearance-none border border-pink-500 rounded py-2 px-3 md:w-96 w-72 h-24 text-white focus:shadow-sm focus:outline-none focus:shadow-pink-500 bg-transparent text-xl"
+              className="shadow appearance-none border border-white rounded py-2 px-3 md:w-96 w-72 h-24 text-white focus:shadow-sm focus:outline-none focus:shadow-white bg-transparent text-xl"
               type="text"
               placeholder="Subject"
               required
@@ -88,7 +95,7 @@ const Contact = () => {
               name="context"
               value={formData.context}
               onChange={handleChange}
-              className="shadow appearance-none border border-pink-500 rounded py-2 px-3 md:w-96 w-72 h-24 text-white leading-tight focus:shadow-sm focus:outline-none focus:shadow-pink-500 bg-transparent text-xl"
+              className="shadow appearance-none border border-white rounded py-2 px-3 md:w-96 w-72 h-24 text-white leading-tight focus:shadow-sm focus:outline-none focus:shadow-white bg-transparent text-xl"
               type="text"
               placeholder="Context"
               required
@@ -97,7 +104,7 @@ const Contact = () => {
           <div className='mt-5'>
             <button
               type="submit"
-              className="bg-transparent border border-pink-500 text-white font-semibold py-2 px-4 rounded cursor-pointer transition duration-300 hover:shadow-sm hover:shadow-pink-500 w-28 text-xl"
+              className="bg-transparent border border-white text-white font-semibold py-2 px-4 rounded cursor-pointer transition duration-300 hover:shadow-sm hover:shadow-white w-28 text-xl"
             >
               Send
             </button>
